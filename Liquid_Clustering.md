@@ -54,6 +54,7 @@ WHERE month >= to_date('2023-02-01')
 ZORDER BY (senderId)
 ```
 ![](https://miro.medium.com/v2/resize:fit:640/format:webp/1*mhKMq2fDDpqHQjxenzEZBQ.png)
+
 **Conclusion**: Z-ordering complements partitioning but both are **static layout techniques**.
 ### LC(Liquid Clustering)
 **Liquid clustering** is a **flexible, adaptive** data layout technique that overcomes the limitations of **Hive partitioning** and **Z-ordering** by:
