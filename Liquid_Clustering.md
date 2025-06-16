@@ -1,11 +1,6 @@
-
-
 title: "Liquid Clustering: An Innovative Approach to Data Layout in Delta Lake"
-source: "https://medium.com/@stevejvoros/liquid-clustering-an-innovative-approach-to-data-layout-in-delta-lake-1a277f57af99"
-"[Delta Lake Liquid Clustering vs Partitioning - That Fabric Guy](https://thatfabricguy.com/delta-lake-liquid-clustering-partitioning/)"
-tags:
-  - "[[delta_table_concepts]]"
----
+
+
 ## What is Liquid Clustering in Delta Lake?
 
 Liquid Clustering is a  optimization technique aimed at streamlining data layout in Delta Lake tables. Liquid Clustering logically clusters your data by values in one or more columns — all without changing the table’s physical layout.
@@ -211,5 +206,8 @@ Once enabled, Automatic Liquid Clustering continuously performs the following th
 3. **Once new clustering key candidates are identified, Predictive Optimization evaluates whether the performance gains outweigh the costs.** If the benefits are significant, it updates the clustering keys on Unity Catalog managed tables
 
 ![Predictive Optimization](https://www.databricks.com/sites/default/files/inline-images/predictive-optimization.png?v=1741200723)
+
+sources: "https://medium.com/@stevejvoros/liquid-clustering-an-innovative-approach-to-data-layout-in-delta-lake-1a277f57af99"
+"[Delta Lake Liquid Clustering vs Partitioning - That Fabric Guy](https://thatfabricguy.com/delta-lake-liquid-clustering-partitioning/)"
 
 
