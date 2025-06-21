@@ -208,7 +208,10 @@ Once enabled, Automatic Liquid Clustering continuously performs the following th
 
 ![Predictive Optimization](https://www.databricks.com/sites/default/files/inline-images/predictive-optimization.png?v=1741200723)
 
-sources: "https://medium.com/@stevejvoros/liquid-clustering-an-innovative-approach-to-data-layout-in-delta-lake-1a277f57af99"
-"[Delta Lake Liquid Clustering vs Partitioning - That Fabric Guy](https://thatfabricguy.com/delta-lake-liquid-clustering-partitioning/)"
+sources: 
+  1) https://medium.com/@stevejvoros/liquid-clustering-an-innovative-approach-to-data-layout-in-delta-lake-1a277f57af99
+  2) [Delta Lake Liquid Clustering vs Partitioning - That Fabric Guy](https://thatfabricguy.com/delta-lake-liquid-clustering-partitioning/)
+  3) https://www.canadiandataguy.com/p/optimizing-delta-lake-tables-liquid?triedRedirect=true
+     
 
 
