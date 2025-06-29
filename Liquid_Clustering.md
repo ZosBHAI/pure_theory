@@ -1,4 +1,4 @@
-title: "Liquid Clustering: An Innovative Approach to Data Layout in Delta Lake"
+
 
 
 ## What is Liquid Clustering in Delta Lake?
