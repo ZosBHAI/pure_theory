@@ -5,11 +5,18 @@
    - Azure Synapse,T-SQL,ADF (Azure Data Factory),Apache Spark,Databricks
 ## Which Approach to Choose?(Motivation Factor)
 - ### Replatform
-  -   Significant investments in Teradata
+  -   Organizations have immediate cluster expansion or renewal pressures. But the client has made significant investments in Teradata
   -   Desire to maintain hybrid/multi-cloud architecture
-  -   Existing DW/Data Mart stays in Teradata
--   ### Rearchitect
-    - Migrating to Cloud native database to leverage cloud benefits with minimal to no disruptions on consumption.
-    - Complete Re-engineering to Cloud native solutions to eliminate current system gaps and move to future state architecture.
+  -   Data explosion and need to leverage elasticity of compute cloud
+- ### Rearchitect
+    - Organizations have immediate cluster expansion or renewal pressures.
+    - Complete Re-engineering to Cloud native solutions to eliminate current system gaps and move to future ready cloud warehousing solution.
     - In Preparation for Streaming work loads and, Delta Lakes and very high volume of transactions.
-    
+## Pros & Cons of each approach
+- ### Replatform
+  - Retains Teradata appliance (hybrid architecture)
+  - Low Code Change,as we can reuse existing  *Terradata* objects like Stored Procedure, BTEQ scripts, so the migration is less complex.
+  - Cons :
+        - Limited or Pre-defined scaling.
+- ### Rearchitect
+- Auto-scaling for dynamic workloads
