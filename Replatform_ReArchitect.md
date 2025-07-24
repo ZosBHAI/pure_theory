@@ -23,6 +23,22 @@
 - Cost offering: Pay-as-you-go model and Provisioned resources for predictable workloads
 - Cons:
    - Migration is complex, includes high code changes.
+      ![Why it is complex](https://github.com/ZosBHAI/pure_theory/blob/main/terradata_to_synapse_migration_phases.png)
+   - ## Following are steps in migrating
+    - Schema and Object Migration
+      1) Data Type Mapping - Ensuring accurate conversion of data types (e.g., DECIMAL, VARCHAR, DATE) to their Synapse equivalents to prevent data loss or corruption.
+      2) Indexing Strategies - Translating Teradata's primary indexes and secondary indexes to Synapse's clustered columnstore indexes, heaps, and clustered indexes for optimal performance.
+      3) Partitioning Schemes - Adapting Teradata's partitioning methods to Synapse's distributed table designs, including hash and round-robin distributions.
+    - Historical Data Migration and Ongoing Data sync
+       1)  Parallel data loading techniques.
+       2)  Data validation and reconciliation.
+       3)  Incremental load strategies for ongoing data synchronization.
+       4)  Performance tuning for large datasets.
+    - Rewriting the Workload for Cloud
+      1) Azure Data Factory (ADF): For orchestrating data movement and transformations.
+      2) Apache Spark: Leveraging its capabilities for large-scale data processing within Azure Synapse Spark pools or Azure Databricks.
+         
+  
 
 
  
