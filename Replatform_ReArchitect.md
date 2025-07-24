@@ -19,4 +19,10 @@
   - Cons :
         - Limited or Pre-defined scaling.
 - ### Rearchitect
-- Auto-scaling for dynamic workloads
+- Auto-scaling for dynamic workloads.On Demand or Provisioned Resources
+- Cost offering: Pay-as-you-go model and Provisioned resources for predictable workloads
+- Cons:
+   - Migration is complex, includes high code changes.
+
+
+ 
