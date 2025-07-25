@@ -19,7 +19,7 @@
   - Low Code Change,as we can reuse existing  *Terradata* objects like Stored Procedure, BTEQ scripts, so the migration is less complex.
   - Cons :
         - Limited or Pre-defined scaling.
-   - **Gotcha** : Check whether the current version in on-premise comply with the version in Cloud. If not , there might be need for pre-migration step.Say for Teradata on Azure via Azure Marketplace support Vantage 17.10 (Latest) and Vantage 16.20 (LTS). If the on-premise Terradata version is lesser than  the mentioned one it would need a Pre-migration to one of the above version.
+   - **Gotcha** : Check whether the current version in on-premise comply with the version in Cloud. If not , there might be need for pre-migration step.For example, Teradata on Azure via Azure Marketplace support Vantage 17.10 (Latest) and Vantage 16.20 (LTS). If the on-premise Terradata version is lesser than  the mentioned one it would need a Pre-migration to one of the above version.
 - ### Rearchitect
 - Auto-scaling for dynamic workloads.On Demand or Provisioned Resources
 - Cost offering: Pay-as-you-go model and Provisioned resources for predictable workloads
