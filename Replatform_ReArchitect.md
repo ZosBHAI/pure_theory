@@ -1,3 +1,4 @@
+![Re-Platform/Re-Architect](https://github.com/ZosBHAI/pure_theory/blob/main/reArchitect_rePlatform.png)
 ## What is Replatform?
 - "Lift-and-shift" approach using the same Teradata engine in the cloud.Say for example using Teradata Vantage on Azure
 ## What is ReArchitect?
