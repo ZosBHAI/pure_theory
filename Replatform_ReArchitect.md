@@ -1,12 +1,13 @@
 ![Re-Platform/Re-Architect](https://github.com/ZosBHAI/pure_theory/blob/main/reArchitect_rePlatform.png)
 ## What is Replatform?
-- "Lift-and-shift" approach using the same Teradata engine in the cloud.Say for example using Teradata Vantage on Azure
+- "Lift-and-shift" approach using the same Teradata engine in the cloud.Say for example using Teradata Vantage on Azure, this can be **Vantage on Azure (DIY)**,is software that can be deployed in the Azure IaaS environment **OR** enable **Teradata Vantage from Azure Marketplace** as a Service.
+- ![Ref](https://assets.teradata.com/resourceCenter/downloads/WhitePapers/Teradata_Vantage_for_Azure.pdf)
 ## What is ReArchitect?
 - Redesigning the entire workload using Azure-native services such as Azure Synapse, Data Factory, Databricks, etc. For example replace legacy Teradata procedures and logic with Azure-native components like
    - Azure Synapse,T-SQL,ADF (Azure Data Factory),Apache Spark,Databricks
 ## Which Approach to Choose?(Motivation Factor)
 - ### Replatform
-  -   Organizations have immediate cluster expansion or renewal pressures. But the client has made significant investments in Teradata
+  -   Organizations have immediate cluster expansion or renewal pressures. But the client has made significant investments in Teradata.Allows reuse of existing Teradata licenses through bring-your-own-license (BYOL) options and preserves familiar SQL, ETL, security, and operational processes.
   -   Desire to maintain hybrid/multi-cloud architecture
   -   Data explosion and need to leverage elasticity of compute cloud
 - ### Rearchitect
@@ -16,9 +17,15 @@
 ## Pros & Cons of each approach
 - ### Replatform
   - Retains Teradata appliance (hybrid architecture)
-  - Low Code Change,as we can reuse existing  *Terradata* objects like Stored Procedure, BTEQ scripts, so the migration is less complex.
+  - Low Code Change,as we can reuse existing  *Teradata* objects like Stored Procedure, BTEQ scripts, so the migration is less complex.
+  - In SaAS model,Teradata handles all scaling operations
   - Cons :
-        - Limited or Pre-defined scaling.
+        - Subscription based pricing model, where customer pay for the provisioned compute and storage resources in a dedicated Teradata-managed environment. Cloud Warehouse solution like Azure Synapse offers a combination of provisioned and serverless(pay-per-use billing)
+             - For example : **Dedicated SQL Pool**, charged hourly for the provisioned data warehouse units; **Serverless SQL Pool** , charged per the data scanned on queries ; **Spark Pools**,charged for the number and type of nodes per hour.
+             
+        - As of now no serverless model for core compute.
+      
+    
    - **Gotcha** : Check whether the current version in on-premise comply with the version in Cloud. If not , there might be need for pre-migration step.For example, **Teradata on Azure via Azure Marketplace** support **Vantage 17.10 (Latest)** and **Vantage 16.20 (LTS)**. If the on-premise Terradata version is lesser than  the mentioned one it would need a Pre-migration to one of the above version.
 - ### Rearchitect
 - Auto-scaling for dynamic workloads.On Demand or Provisioned Resources
