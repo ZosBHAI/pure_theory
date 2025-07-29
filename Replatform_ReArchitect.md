@@ -18,33 +18,33 @@
   - Retains Teradata appliance (hybrid architecture)
   - Low Code Change,as we can reuse existing  *Teradata* objects like Stored Procedure, BTEQ scripts, so the migration is less complex.
   - In SaAS model,Teradata handles all scaling operations
-  - Cons :
-        - Subscription based pricing model, where customer pay for the provisioned compute and storage resources in a dedicated Teradata-managed environment. Cloud Warehouse solution like Azure Synapse offers a combination of provisioned and serverless(pay-per-use billing)
-             - For example : **Dedicated SQL Pool**, charged hourly for the provisioned data warehouse units; **Serverless SQL Pool** , charged per the data scanned on queries ; **Spark Pools**,charged for the number and type of nodes per hour.
+  - Cons:
+     - Subscription based pricing model, where customer pay for the provisioned compute and storage resources in a dedicated Teradata-managed environment. Cloud Warehouse solution like Azure Synapse offers a combination of provisioned and serverless(pay-per-use billing)
+          - For example : **Dedicated SQL Pool**, charged hourly for the provisioned data warehouse units; **Serverless SQL Pool** , charged per the data scanned on queries ; **Spark Pools**,charged for the number and type of nodes per hour.
              
-        - As of now no serverless model for core compute.
+     - As of now no serverless model for core compute.
       
     
    - **Gotcha** : Check whether the current version in on-premise comply with the version in Cloud. If not , there might be need for pre-migration step.For example, **Teradata on Azure via Azure Marketplace** support **Vantage 17.10 (Latest)** and **Vantage 16.20 (LTS)**. If the on-premise Terradata version is lesser than  the mentioned one it would need a Pre-migration to one of the above version.
 - ### Rearchitect
-- Auto-scaling for dynamic workloads.On Demand or Provisioned Resources
-- Cost offering: Pay-as-you-go model and Provisioned resources for predictable workloads
-- Cons:
-   - Migration is complex, includes high code changes.
-      ![Why it is complex](https://github.com/ZosBHAI/pure_theory/blob/main/terradata_to_synapse_migration_phases.png)
-   - ## Following are steps in migrating
-    - Schema and Object Migration
-      1) Data Type Mapping - Ensuring accurate conversion of data types (e.g., DECIMAL, VARCHAR, DATE) to their Synapse equivalents to prevent data loss or corruption.
-      2) Indexing Strategies - Translating Teradata's primary indexes and secondary indexes to Synapse's clustered columnstore indexes, heaps, and clustered indexes for optimal performance.
-      3) Partitioning Schemes - Adapting Teradata's partitioning methods to Synapse's distributed table designs, including hash and round-robin distributions.
-    - Historical Data Migration and Ongoing Data sync
-       1)  Parallel data loading techniques.
-       2)  Data validation and reconciliation.
-       3)  Incremental load strategies for ongoing data synchronization.
-       4)  Performance tuning for large datasets.
-    - Rewriting the Workload for Cloud
-      1) Azure Data Factory (ADF): For orchestrating data movement and transformations.
-      2) Apache Spark: Leveraging its capabilities for large-scale data processing within Azure Synapse Spark pools or Azure Databricks.
+   - Auto-scaling for dynamic workloads.On Demand or Provisioned Resources
+   - Cost offering: Pay-as-you-go model and Provisioned resources for predictable workloads
+   - Cons:
+      - Migration is complex, includes high code changes.
+         ![Why it is complex](https://github.com/ZosBHAI/pure_theory/blob/main/terradata_to_synapse_migration_phases.png)
+      - ## Following are steps in migrating
+       - Schema and Object Migration
+         1) Data Type Mapping - Ensuring accurate conversion of data types (e.g., DECIMAL, VARCHAR, DATE) to their Synapse equivalents to prevent data loss or corruption.
+         2) Indexing Strategies - Translating Teradata's primary indexes and secondary indexes to Synapse's clustered columnstore indexes, heaps, and clustered indexes for optimal performance.
+         3) Partitioning Schemes - Adapting Teradata's partitioning methods to Synapse's distributed table designs, including hash and round-robin distributions.
+       - Historical Data Migration and Ongoing Data sync
+          1)  Parallel data loading techniques.
+          2)  Data validation and reconciliation.
+          3)  Incremental load strategies for ongoing data synchronization.
+          4)  Performance tuning for large datasets.
+       - Rewriting the Workload for Cloud
+         1) Azure Data Factory (ADF): For orchestrating data movement and transformations.
+         2) Apache Spark: Leveraging its capabilities for large-scale data processing within Azure Synapse Spark pools or Azure Databricks.
          
   
 
