@@ -7,7 +7,7 @@
 ## Which Approach to Choose?(Motivation Factor)
 - ### Replatform
   -   Organizations have immediate cluster expansion or renewal pressures. But the client has made significant investments in Teradata.Allows reuse of existing Teradata licenses through bring-your-own-license (BYOL) options and preserves familiar SQL, ETL, security, and operational processes.
-  -   Desire to maintain hybrid/multi-cloud architecture
+  -   Desire to maintain hybrid/multi-cloud architecture ,Teradata Vantage for Azure supports a hybrid cloud strategy, allowing organizations to leverage their existing on-premises investments while also utilizing the agility of the cloud
   -   Data explosion and need to leverage elasticity of compute cloud
 - ### Rearchitect
     - Organizations have immediate cluster expansion or renewal pressures.
