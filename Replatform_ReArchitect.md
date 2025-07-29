@@ -1,7 +1,6 @@
 ![Re-Platform/Re-Architect](https://github.com/ZosBHAI/pure_theory/blob/main/reArchitect_rePlatform.png)
 ## What is Replatform?
-- "Lift-and-shift" approach using the same Teradata engine in the cloud.Say for example using Teradata Vantage on Azure, this can be **Vantage on Azure (DIY)**,is software that can be deployed in the Azure IaaS environment **OR** enable **Teradata Vantage from Azure Marketplace** as a Service.
-- ![Ref](https://assets.teradata.com/resourceCenter/downloads/WhitePapers/Teradata_Vantage_for_Azure.pdf)
+- "Lift-and-shift" approach using the same Teradata engine in the cloud.Say for example using Teradata Vantage on Azure, this can be **Vantage on Azure (DIY)**,is software that can be deployed in the Azure IaaS environment **OR** enable **Teradata Vantage from Azure Marketplace** as a Service.![Reference](https://assets.teradata.com/resourceCenter/downloads/WhitePapers/Teradata_Vantage_for_Azure.pdf)
 ## What is ReArchitect?
 - Redesigning the entire workload using Azure-native services such as Azure Synapse, Data Factory, Databricks, etc. For example replace legacy Teradata procedures and logic with Azure-native components like
    - Azure Synapse,T-SQL,ADF (Azure Data Factory),Apache Spark,Databricks
