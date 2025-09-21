@@ -8,9 +8,8 @@
 - ### Replatform
   -   Organizations have immediate cluster expansion or renewal pressures. But the client has made significant investments in Teradata.Allows reuse of existing Teradata licenses through bring-your-own-license (BYOL) options and preserves familiar SQL, ETL, security, and operational processes.
   -   Desire to maintain hybrid/multi-cloud architecture ,Teradata Vantage for Azure supports a hybrid cloud strategy, allowing organizations to leverage their existing on-premises investments while also utilizing the agility of the cloud
-  -   Data explosion and need to leverage elasticity of compute cloud
+ 
 - ### Rearchitect
-    - Organizations have immediate cluster expansion or renewal pressures.
     - Complete Re-engineering to Cloud native solutions to eliminate current system gaps and move to future ready cloud warehousing solution.
     - In Preparation for Streaming work loads and, Delta Lakes and very high volume of transactions.
 ## Pros & Cons of each approach
